@@ -25,6 +25,10 @@ function App() {
         setBtnTxt('Send')
         setEnd(true)
       })
+      .catch(err=>{
+        alert('예기치 못한 오류가 발생했습니다')
+        setReceivedMessages([...receivedMessages, '[ERROR:예기치 못한 오류 발생]'])
+      })
     }
   }
 
